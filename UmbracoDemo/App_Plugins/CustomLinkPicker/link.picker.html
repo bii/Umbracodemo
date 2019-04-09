@@ -1,0 +1,10 @@
+﻿<div ng-controller="CustomLinkPicker.LinkPickerController">
+    <div>
+        <p class="chosen" ng-show="model.value">
+            <a href="{{model.value.url}}" target="_blank">{{model.value.name || model.value.url}}</a> <a class="remove" href="" ng-click="removeLink()"><i class="icon icon-delete"></i></a>
+        </p>
+        <p ng-hide="model.value">
+            <a href="" ng-click="chooseLink()">Choose</a>
+        </p>
+    </div>
+</div>

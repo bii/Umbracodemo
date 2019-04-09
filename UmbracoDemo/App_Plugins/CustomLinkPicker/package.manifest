@@ -1,0 +1,16 @@
+﻿{
+    "propertyEditors": [
+        {
+            "alias": "custom.link.picker",
+            "name": "Custom Link Picker",
+            "editor": {
+                "view": "~/App_Plugins/CustomLinkPicker/link.picker.html",
+                "hideLabel": false,
+                "valueType": "JSON"
+            }
+        }
+    ],
+    "javascript": [
+        "~/App_Plugins/CustomLinkPicker/link.picker.controller.js"
+    ]
+}

@@ -1,0 +1,18 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using UmbracoDemo.Models
+
+@{
+    if (Model?.Content != null)
+    {
+        CustomLink link = Model.Content.GetPropertyValue<CustomLink>("Link");
+
+        if (link != null)
+        {
+            <article>
+                <div>
+                    <a class="button" href="@link.Url" target="@link.Target">@link.Name</a>
+                </div>
+            </article>
+        }
+    }
+}

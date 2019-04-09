@@ -1,0 +1,19 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<dynamic>
+
+@if (Model?.Content != null)
+{
+    var link = Model.Content.Link;
+
+    if (link != null)
+    {
+        var name = link.Name;
+        var url = link.Url;
+        var target = link.Target;
+
+        <article>
+            <div>
+                <a class="button" href="@url" target="@target">@name</a>
+            </div>
+        </article>
+    }
+}
